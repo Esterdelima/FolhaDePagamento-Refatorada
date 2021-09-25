@@ -58,17 +58,16 @@ def opcoesFolha():
         if funcionario.getTipoFuncionario() == 'Horista':
             valor = funcionario.cartaoPonto()
             funcionario.setValorSalario(0)
-            # opcoes()
-            exit()
+            opcoes()
         elif funcionario.getTipoFuncionario() == 'Assalariado':
             valor = funcionario.salarioAssalariado()
             funcionario.setSalario(0)
-            # opcoes()
+            opcoes()
             exit()
         else:
             valor = funcionario.comissao()
             funcionario.setTaxaComissao(0)
-            # opcoes()
+            opcoes()
             exit()
 
         funcionario.agendar()

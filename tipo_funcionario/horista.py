@@ -36,9 +36,9 @@ class Horista(Funcionario):
                 taxaServico = 0
                 sindicato = 0
                 extra = self.valorSalario * 1.5 * (self.horas-8)
-                return (8*self.valorSalario)+extra - self.sindicato
+                print((8*self.valorSalario)+extra - self.sindicato)
         else:
-            return self.valorSalario*self.horas
+            print(self.valorSalario*self.horas)
     
     def agendar(self):
         dt = pendulum.now()

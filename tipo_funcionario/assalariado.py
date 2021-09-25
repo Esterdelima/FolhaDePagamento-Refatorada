@@ -31,9 +31,10 @@ class Assalariado(Funcionario):
                 return self.salario - self.sindicato - self.taxaServico
                 
             else:
-                return self.salario - self.sindicato
+                print(self.salario - self.sindicato)
         else:
-            return self.salario
+            print(self.salario)
+            # return self.salario
 
     def agendar(self):
         dt = pendulum.now()

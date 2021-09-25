@@ -25,9 +25,10 @@ class Comissario(Funcionario):
                 return novoSalario
             else:
                 novoSalario = self.taxaComissao - self.sindicato
-            return novoSalario
+            print(novoSalario)
         else:
-            return self.taxaComissao
+            print(self.taxaComissao)
+            # return self.taxaComissao
 
 
     def agendar(self):
